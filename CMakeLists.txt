@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( hulls )
+find_package( OpenCV REQUIRED )
+add_executable( hulls hulls.cpp )
+target_link_libraries( hulls ${OpenCV_LIBS} )
